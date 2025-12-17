@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Commerce &amp; Management Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header hidden">
+        <div class="header-container">
+            <div class="header-left">
+                <button id="menuToggle" class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="logo">
+                    <span class="logo-icon">🌾</span>
+                    <span class="logo-text">FarmerCommerce</span>
+                </div>
+            </div>
+            <div class="header-center">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search products, tools...">
+                    <button id="searchBtn">🔍</button>
+                </div>
+            </div>
+            <div class="header-right">
+                <button id="cartBtn" class="icon-btn">
+                    🛒
+                    <span id="cartCount" class="badge">0</span>
+                </button>
+                <div class="user-menu">
+                    <button id="userMenuBtn" class="user-btn">
+                        <span id="userName">User</span>
+                        <span>▼</span>
+                    </button>
+                    <div id="userDropdown" class="dropdown hidden">
+                        <a href="#" data-route="profile">Profile</a>
+                        <a href="#" id="logoutBtn">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="sidebar hidden">
+        <nav class="sidebar-nav"></nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main id="mainContent" class="main-content">
+        <!-- Content will be dynamically loaded here -->
+    </main>
+
+    <!-- Shopping Cart Drawer -->
+    <div id="cartDrawer" class="cart-drawer">
+        <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <button id="closeCart" class="close-btn">✕</button>
+        </div>
+        <div id="cartItems" class="cart-items"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">₹0</span>
+            </div>
+            <button id="checkoutBtn" class="btn btn--primary btn--full-width">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Modal Container -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <button class="modal-close">✕</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="app.js"></script>
+    <script src="components.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
