@@ -1,8 +1,8 @@
 // Data Store (In-Memory)
 const AppData = {
   users: [
-    { id: 1, name: 'Admin User', email: 'admin@farmercommerce.com', password: 'admin123', role: 'ADMIN', phone: '+919876543210', verified: true, createdAt: '2025-01-01' },
-    { id: 2, name: 'Raj Kumar', email: 'farmer@farmercommerce.com', password: 'farmer123', role: 'FARMER', phone: '+919876543211', farmName: 'Golden Fields Farm', verified: true, createdAt: '2025-01-15' },
+    { id: 1, name: 'Admins User', email: 'admin@farmercommerce.com', password: 'admin123', role: 'ADMIN', phone: '+919876543210', verified: true, createdAt: '2025-01-01' },
+    { id: 2, name: 'Raja Kumar', email: 'farmer@farmercommerce.com', password: 'farmer123', role: 'FARMER', phone: '+919876543211', farmName: 'Golden Fields Farm', verified: true, createdAt: '2025-01-15' },
     { id: 3, name: 'Priya Sharma', email: 'consumer@farmercommerce.com', password: 'consumer123', role: 'CONSUMER', phone: '+919876543212', verified: true, createdAt: '2025-02-01' }
   ],
   
